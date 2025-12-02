@@ -6,7 +6,7 @@ const NavBarLogin = () => {
   return (
     <nav className="sticky top-0 bg-black text-white shadow-md py-3 z-50">
       <div className="container mx-auto flex items-center justify-between px-4">
-        <a href="/" className="flex items-center gap-2">
+        <a href="/home" className="flex items-center gap-2">
           <img src={logo} alt="Logo" className="w-12 h-12 object-contain" />
         </a>
 

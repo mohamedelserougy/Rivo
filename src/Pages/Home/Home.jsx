@@ -10,6 +10,7 @@ const HomePage = () => {
       <HomeCategory />
       <CardProductsContainer title="best selling" btntitle="see more" />
       <DiscountSection />
+      <CardProductsContainer title="best selling" btntitle="see more" />
     </div>
   );
 };
