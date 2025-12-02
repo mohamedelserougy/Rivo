@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const SubTitle = ({ title, btntitle }) => {
+const SubTitle = ({ title, btntitle, pathText }) => {
   return (
     <div className="flex justify-between items-center pt-4">
       {/* Title */}
@@ -8,7 +9,8 @@ const SubTitle = ({ title, btntitle }) => {
 
       {/* Optional Button */}
       {btntitle && (
-        <button
+        <Link
+          to={`${pathText}`}
           className="
         text-sm font-medium
     bg-black text-white
@@ -20,7 +22,7 @@ const SubTitle = ({ title, btntitle }) => {
   "
         >
           {btntitle}
-        </button>
+        </Link>
       )}
     </div>
   );

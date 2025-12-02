@@ -1,11 +1,11 @@
 import React from "react";
 import CategoryCard from "./CategoryCard";
 
-import clothe from "../../images/clothe.png";
-import cat2 from "../../images/cat2.png";
-import labtop from "../../images/labtop.png";
-import sale from "../../images/sale.png";
-import pic from "../../images/pic.png";
+import clothe from "../../assets/react.svg";
+import cat2 from "../../assets/react.svg";
+import labtop from "../../assets/react.svg";
+import sale from "../../assets/react.svg";
+import pic from "../../assets/react.svg";
 
 const categories = [
   { title: "Home Appliances", img: clothe, background: "#F4DBA4" },
@@ -31,7 +31,7 @@ const categories = [
 const CategoryContainer = () => {
   return (
     <div className="my-6 px-4">
-      <h2 className="text-2xl font-semibold text-white mb-4">All Categories</h2>
+      <h2 className="text-2xl font-semibold text-black mb-4">All Categories :</h2>
       <div className="flex flex-wrap justify-between">
         {categories.map((cat, index) => (
           <CategoryCard

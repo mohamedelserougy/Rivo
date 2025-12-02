@@ -8,7 +8,11 @@ const HomeCategory = () => {
   return (
     <div className="my-6 px-4">
       {/* SubTitle section */}
-      <SubTitle title="Categories" btntitle="See More" />
+      <SubTitle
+        title="Categories"
+        btntitle="See More"
+        pathText="/allcategory"
+      />
 
       {/* Categories flex layout */}
       <div className="flex flex-wrap justify-between mt-4">

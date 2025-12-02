@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const LoginPage = () => {
+const RegisterPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-950 px-4">
       <div
@@ -15,13 +15,24 @@ const LoginPage = () => {
       >
         {/* Title */}
         <h1 className="text-2xl font-semibold text-center mb-6">
-          تسجيل الدخول
+          Register Now{" "}
         </h1>
+
+        {/* Username */}
+        <input
+          type="text"
+          placeholder="user name"
+          className="
+            w-full p-3 rounded-xl bg-gray-800 text-white text-center
+            border border-gray-700 focus:border-gray-500 
+            outline-none transition-all duration-300 mb-4
+          "
+        />
 
         {/* Email */}
         <input
           type="text"
-          placeholder="الايميل..."
+          placeholder="email"
           className="
             w-full p-3 rounded-xl bg-gray-800 text-white text-center
             border border-gray-700 focus:border-gray-500 
@@ -32,7 +43,7 @@ const LoginPage = () => {
         {/* Password */}
         <input
           type="password"
-          placeholder="كلمة السر..."
+          placeholder="password"
           className="
             w-full p-3 rounded-xl bg-gray-800 text-white text-center
             border border-gray-700 focus:border-gray-500 
@@ -40,7 +51,7 @@ const LoginPage = () => {
           "
         />
 
-        {/* Login Button */}
+        {/* Register Button */}
         <button
           className="
             w-full mt-5 py-3 bg-black rounded-full font-medium
@@ -48,33 +59,19 @@ const LoginPage = () => {
             transition-all duration-300
           "
         >
-          تسجيل الدخول
+          Register
         </button>
 
-        {/* Register Link */}
+        {/* Login Link */}
         <p className="text-center mt-5 text-gray-300">
-          ليس لديك حساب؟
-          <Link to="/register" className="text-red-400 hover:underline mx-1">
-            اضغط هنا
+          Already have an account?
+          <Link to="/login" className="text-red-400 hover:underline mx-1">
+            Click here
           </Link>
         </p>
-
-        {/* Admin / User Links */}
-        <div className="flex items-center justify-center gap-4 mt-6">
-          <Link
-            to="/admin/allproducts"
-            className="text-red-400 hover:underline"
-          >
-            الدخول ادمن
-          </Link>
-
-          <Link to="/user/allorders" className="text-red-400 hover:underline">
-            الدخول مستخدم
-          </Link>
-        </div>
       </div>
     </div>
   );
 };
 
-export default LoginPage;
+export default RegisterPage;
