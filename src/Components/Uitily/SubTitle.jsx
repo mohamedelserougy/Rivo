@@ -10,11 +10,11 @@ const SubTitle = ({ title, btntitle }) => {
       {btntitle && (
         <button
           className="
-    text-sm font-medium
+        text-sm font-medium
     bg-black text-white
-    px-6 py-2
-    rounded-full shadow-md
-    transition-all duration-300
+           px-6 py-2
+          rounded-full shadow-md
+           transition-all duration-300
     hover:bg-gray-800 hover:scale-105
     active:scale-95
   "
