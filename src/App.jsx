@@ -7,6 +7,7 @@ import Register from "./Pages/Auth/RegisterPage";
 import AllCategoryPage from "./Pages/Category/AllCategoryPage";
 import AllBrand from "./Pages/Brand/AllBrand";
 import ShopProductsPage from "./Pages/products/ShopProductsPage";
+import ProductDetalisPage from "./Pages/products/ProductDetalisPage";
 
 function App() {
   const routes = createBrowserRouter([
@@ -16,6 +17,7 @@ function App() {
     { path: "/allcategory", element: <AllCategoryPage /> },
     { path: "/allbrand", element: <AllBrand /> },
     { path: "/allproducts", element: <ShopProductsPage /> },
+    { path: "/products/:id", element: <ProductDetalisPage /> },
   ]);
 
   return (
