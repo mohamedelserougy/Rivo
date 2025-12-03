@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import image from "/src/assets/react.svg";
+import ProductText from "./ProductText";
 
 const ProductDetails = () => {
   return (
@@ -16,7 +17,9 @@ const ProductDetails = () => {
           </div>
 
           {/* Right Section (Product Text) */}
-          <div className="lg:col-span-8">product text</div>
+          <div className="lg:col-span-8">
+            <ProductText />
+          </div>
         </div>
       </div>
     </div>
