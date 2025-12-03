@@ -6,14 +6,16 @@ import LoginPage from "./Pages/Auth/LoginPage";
 import Register from "./Pages/Auth/RegisterPage";
 import AllCategoryPage from "./Pages/Category/AllCategoryPage";
 import AllBrand from "./Pages/Brand/AllBrand";
+import ShopProductsPage from "./Pages/products/ShopProductsPage";
 
 function App() {
   const routes = createBrowserRouter([
     { path: "/home", element: <HomePage /> },
-    { path: "login", element: <LoginPage /> },
+    { path: "/login", element: <LoginPage /> },
     { path: "/register", element: <Register /> },
     { path: "/allcategory", element: <AllCategoryPage /> },
     { path: "/allbrand", element: <AllBrand /> },
+    { path: "/allproducts", element: <ShopProductsPage /> },
   ]);
 
   return (
