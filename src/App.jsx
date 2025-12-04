@@ -8,6 +8,7 @@ import AllCategoryPage from "./Pages/Category/AllCategoryPage";
 import AllBrand from "./Pages/Brand/AllBrand";
 import ShopProductsPage from "./Pages/products/ShopProductsPage";
 import ProductDetalisPage from "./Pages/products/ProductDetalisPage";
+import CartPage from "./Pages/Cart/CartPage";
 
 function App() {
   const routes = createBrowserRouter([
@@ -18,6 +19,7 @@ function App() {
     { path: "/allbrand", element: <AllBrand /> },
     { path: "/allproducts", element: <ShopProductsPage /> },
     { path: "/products/:id", element: <ProductDetalisPage /> },
+    { path: "/cart", element: <CartPage /> },
   ]);
 
   return (
