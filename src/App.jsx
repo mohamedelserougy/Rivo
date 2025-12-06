@@ -13,6 +13,10 @@ import ChoosePayMethoudPage from "./Pages/Checkout/ChoosePayMethoudPage";
 import AdminAllProductsPage from "./Pages/Admin/AdminAllProductsPage";
 import AdminAllOrdersPage from "./Pages/Admin/AdminAllOrdersPage";
 import AdminOrderDetailsPage from "./Pages/Admin/AdminOrderDetailsPage";
+import AdminAddBrandPage from "./Pages/Admin/AdminAddBrandPage";
+import AdminAddCategoryPage from "./Pages/Admin/AdminAddCategoryPage";
+import AdminAddSubCategoryPage from "./Pages/Admin/AdminAddSubCategoryPage";
+import AdminAddProductsPage from "./Pages/Admin/AdminAddProductsPage";
 
 function App() {
   const routes = createBrowserRouter([
@@ -27,7 +31,11 @@ function App() {
     { path: "/payment", element: <ChoosePayMethoudPage /> },
     { path: "/admin/allproducts", element: <AdminAllProductsPage /> },
     { path: "/admin/allorders", element: <AdminAllOrdersPage /> },
-    { path: "/admin/allorders/:id", element: <AdminOrderDetailsPage/> },
+    { path: "/admin/allorders/:id", element: <AdminOrderDetailsPage /> },
+    { path: "/admin/addbrand", element: <AdminAddBrandPage /> },
+    { path: "/admin/addcategory", element: <AdminAddCategoryPage /> },
+    { path: "/admin/addsubcategory", element: <AdminAddSubCategoryPage /> },
+    { path: "/admin/addproduct", element: <AdminAddProductsPage /> },
   ]);
 
   return (
