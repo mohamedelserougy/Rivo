@@ -11,6 +11,8 @@ import ProductDetalisPage from "./Pages/products/ProductDetalisPage";
 import CartPage from "./Pages/Cart/CartPage";
 import ChoosePayMethoudPage from "./Pages/Checkout/ChoosePayMethoudPage";
 import AdminAllProductsPage from "./Pages/Admin/AdminAllProductsPage";
+import AdminAllOrdersPage from "./Pages/Admin/AdminAllOrdersPage";
+import AdminOrderDetailsPage from "./Pages/Admin/AdminOrderDetailsPage";
 
 function App() {
   const routes = createBrowserRouter([
@@ -24,6 +26,8 @@ function App() {
     { path: "/cart", element: <CartPage /> },
     { path: "/payment", element: <ChoosePayMethoudPage /> },
     { path: "/admin/allproducts", element: <AdminAllProductsPage /> },
+    { path: "/admin/allorders", element: <AdminAllOrdersPage /> },
+    { path: "/admin/allorders/:id", element: <AdminOrderDetailsPage/> },
   ]);
 
   return (
