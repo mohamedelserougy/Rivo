@@ -10,6 +10,7 @@ import ShopProductsPage from "./Pages/products/ShopProductsPage";
 import ProductDetalisPage from "./Pages/products/ProductDetalisPage";
 import CartPage from "./Pages/Cart/CartPage";
 import ChoosePayMethoudPage from "./Pages/Checkout/ChoosePayMethoudPage";
+import AdminAllProductsPage from "./Pages/Admin/AdminAllProductsPage";
 
 function App() {
   const routes = createBrowserRouter([
@@ -22,6 +23,7 @@ function App() {
     { path: "/products/:id", element: <ProductDetalisPage /> },
     { path: "/cart", element: <CartPage /> },
     { path: "/payment", element: <ChoosePayMethoudPage /> },
+    { path: "/admin/allproducts", element: <AdminAllProductsPage /> },
   ]);
 
   return (
